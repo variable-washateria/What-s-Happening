@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>"Your Results</title>
+</head>
+<body>
+
+
+<h1>Here is what's is playing at {{checked_venues}} for {{date}}: </h1> 
+
+
+{%if "Mohawk" in checked_venues%}
+<h1> Mohawk </h1>
+
+<p>{{theywantasee1[date]}}</p>
+
+{% set searchitem = theywantasee1[date] %}
+
+
+{%endif%}
+
+
+{%if "Parish" in checked_venues%}
+<h1> Parish </h1>
+<p>{{theywantasee2}}</p>
+{%endif%}
+
+
+{%if "Friends" in checked_venues%}
+<h1> Friends </h1>
+<p>{{theywantasee3}}</p>
+{%endif%}
+
+
+
+</body>
+</html>
